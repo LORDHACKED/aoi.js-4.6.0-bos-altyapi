@@ -3,7 +3,7 @@
     "start": "node bot.js"
   },
   "dependencies": {
-    "aoi.js": "^4.6.2"
+    "aoi.js": "^4.6.0"
   },
   "engines": {
     "node": "12.x"
