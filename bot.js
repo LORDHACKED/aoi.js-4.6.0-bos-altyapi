@@ -13,8 +13,6 @@ const bot = new aoijs.Bot({
 })
 
 //Eventler
-bot.onJoined()
-bot.onLeave()
 bot.onMessage()
 bot.loadCommands(`./komutlar/`) //Command Handlerimizi Ayarladık
 //komutları alta yazın
