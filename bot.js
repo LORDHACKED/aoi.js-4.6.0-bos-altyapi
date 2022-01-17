@@ -17,16 +17,6 @@ bot.onJoined()
 bot.onLeave()
 bot.onMessage()
 bot.loadCommands(`./komutlar/`) //Command Handlerimizi Ayarladık
-var reader = fs.readdirSync("./komutlar/").filter(file => file.endsWith(".js"))
-for(const file of reader) {    
-    const command = require(`./komutlar/${file}`) // başında ve sonunda tırnak "`" olcak
-    bot.command({
-        name: command.name,
-        aliases: command.aliases,
-        bkz: command.bkz,
-        code: command.code
-    })
-}
 //komutları alta yazın
 
 //Örnek Komut
