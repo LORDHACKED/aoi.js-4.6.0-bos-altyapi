@@ -1,8 +1,6 @@
-const app = require('express')();
-app.get('/', (req, res) => {
-    res.send('');
-});
-const keep_alive = require("./keep-alive.js")
+var http = require('http');
+var server = http.createServer(function (req, res) {res.write('');res.end();});server.listen(PORTUNUZ);
+
 const aoijs = require("aoi.js")
 var fs = require('fs');
 const bot = new aoijs.Bot({
